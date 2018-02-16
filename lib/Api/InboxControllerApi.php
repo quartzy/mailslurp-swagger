@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace MailSlurp\Swagger\MailSlurp\Swagger\Api;
+namespace MailSlurp\Swagger\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -96,7 +96,7 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseInboxDto_
+     * @return \MailSlurp\Swagger\Model\ResponseInboxDto_
      */
     public function createRandomInboxUsingPOST($apiKey)
     {
@@ -113,11 +113,11 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseInboxDto_, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \MailSlurp\Swagger\Model\ResponseInboxDto_, HTTP status code, HTTP response headers (array of strings)
      */
     public function createRandomInboxUsingPOSTWithHttpInfo($apiKey)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseInboxDto_';
+        $returnType = '\MailSlurp\Swagger\Model\ResponseInboxDto_';
         $request = $this->createRandomInboxUsingPOSTRequest($apiKey);
 
         try {
@@ -169,7 +169,7 @@ class InboxControllerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseInboxDto_',
+                        '\MailSlurp\Swagger\Model\ResponseInboxDto_',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class InboxControllerApi
      */
     public function createRandomInboxUsingPOSTAsyncWithHttpInfo($apiKey)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseInboxDto_';
+        $returnType = '\MailSlurp\Swagger\Model\ResponseInboxDto_';
         $request = $this->createRandomInboxUsingPOSTRequest($apiKey);
 
         return $this->client
@@ -355,7 +355,7 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \MailSlurp\Swagger\MailSlurp\Swagger\Model\Response
+     * @return \MailSlurp\Swagger\Model\Response
      */
     public function deleteInboxUsingDELETE($apiKey, $uuid)
     {
@@ -373,11 +373,11 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \MailSlurp\Swagger\MailSlurp\Swagger\Model\Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \MailSlurp\Swagger\Model\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteInboxUsingDELETEWithHttpInfo($apiKey, $uuid)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response';
+        $returnType = '\MailSlurp\Swagger\Model\Response';
         $request = $this->deleteInboxUsingDELETERequest($apiKey, $uuid);
 
         try {
@@ -429,7 +429,7 @@ class InboxControllerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response',
+                        '\MailSlurp\Swagger\Model\Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -473,7 +473,7 @@ class InboxControllerApi
      */
     public function deleteInboxUsingDELETEAsyncWithHttpInfo($apiKey, $uuid)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response';
+        $returnType = '\MailSlurp\Swagger\Model\Response';
         $request = $this->deleteInboxUsingDELETERequest($apiKey, $uuid);
 
         return $this->client
@@ -635,7 +635,7 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListEmailDto_
+     * @return \MailSlurp\Swagger\Model\ResponseListEmailDto_
      */
     public function getEmailsForInboxUsingGET($apiKey, $uuid, $minCount = null, $maxWait = null, $since = null)
     {
@@ -656,11 +656,11 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListEmailDto_, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \MailSlurp\Swagger\Model\ResponseListEmailDto_, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEmailsForInboxUsingGETWithHttpInfo($apiKey, $uuid, $minCount = null, $maxWait = null, $since = null)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListEmailDto_';
+        $returnType = '\MailSlurp\Swagger\Model\ResponseListEmailDto_';
         $request = $this->getEmailsForInboxUsingGETRequest($apiKey, $uuid, $minCount, $maxWait, $since);
 
         try {
@@ -712,7 +712,7 @@ class InboxControllerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListEmailDto_',
+                        '\MailSlurp\Swagger\Model\ResponseListEmailDto_',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -762,7 +762,7 @@ class InboxControllerApi
      */
     public function getEmailsForInboxUsingGETAsyncWithHttpInfo($apiKey, $uuid, $minCount = null, $maxWait = null, $since = null)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListEmailDto_';
+        $returnType = '\MailSlurp\Swagger\Model\ResponseListEmailDto_';
         $request = $this->getEmailsForInboxUsingGETRequest($apiKey, $uuid, $minCount, $maxWait, $since);
 
         return $this->client
@@ -935,7 +935,7 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListInboxDto_
+     * @return \MailSlurp\Swagger\Model\ResponseListInboxDto_
      */
     public function getListOfInboxesUsingGET($apiKey)
     {
@@ -952,11 +952,11 @@ class InboxControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListInboxDto_, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \MailSlurp\Swagger\Model\ResponseListInboxDto_, HTTP status code, HTTP response headers (array of strings)
      */
     public function getListOfInboxesUsingGETWithHttpInfo($apiKey)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListInboxDto_';
+        $returnType = '\MailSlurp\Swagger\Model\ResponseListInboxDto_';
         $request = $this->getListOfInboxesUsingGETRequest($apiKey);
 
         try {
@@ -1008,7 +1008,7 @@ class InboxControllerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListInboxDto_',
+                        '\MailSlurp\Swagger\Model\ResponseListInboxDto_',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1050,7 +1050,7 @@ class InboxControllerApi
      */
     public function getListOfInboxesUsingGETAsyncWithHttpInfo($apiKey)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListInboxDto_';
+        $returnType = '\MailSlurp\Swagger\Model\ResponseListInboxDto_';
         $request = $this->getListOfInboxesUsingGETRequest($apiKey);
 
         return $this->client
@@ -1191,11 +1191,11 @@ class InboxControllerApi
      *
      * @param  string $apiKey Your API Key. Sign up and find it in your dashboard. (required)
      * @param  string $uuid The inbox&#39;s id. (required)
-     * @param  \MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
+     * @param  \MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \MailSlurp\Swagger\MailSlurp\Swagger\Model\Response
+     * @return \MailSlurp\Swagger\Model\Response
      */
     public function sendEmailFromUserUsingPOST($apiKey, $uuid, $sendEmailDto)
     {
@@ -1210,15 +1210,15 @@ class InboxControllerApi
      *
      * @param  string $apiKey Your API Key. Sign up and find it in your dashboard. (required)
      * @param  string $uuid The inbox&#39;s id. (required)
-     * @param  \MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
+     * @param  \MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \MailSlurp\Swagger\MailSlurp\Swagger\Model\Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \MailSlurp\Swagger\Model\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendEmailFromUserUsingPOSTWithHttpInfo($apiKey, $uuid, $sendEmailDto)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response';
+        $returnType = '\MailSlurp\Swagger\Model\Response';
         $request = $this->sendEmailFromUserUsingPOSTRequest($apiKey, $uuid, $sendEmailDto);
 
         try {
@@ -1270,7 +1270,7 @@ class InboxControllerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response',
+                        '\MailSlurp\Swagger\Model\Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1287,7 +1287,7 @@ class InboxControllerApi
      *
      * @param  string $apiKey Your API Key. Sign up and find it in your dashboard. (required)
      * @param  string $uuid The inbox&#39;s id. (required)
-     * @param  \MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
+     * @param  \MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1309,14 +1309,14 @@ class InboxControllerApi
      *
      * @param  string $apiKey Your API Key. Sign up and find it in your dashboard. (required)
      * @param  string $uuid The inbox&#39;s id. (required)
-     * @param  \MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
+     * @param  \MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function sendEmailFromUserUsingPOSTAsyncWithHttpInfo($apiKey, $uuid, $sendEmailDto)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response';
+        $returnType = '\MailSlurp\Swagger\Model\Response';
         $request = $this->sendEmailFromUserUsingPOSTRequest($apiKey, $uuid, $sendEmailDto);
 
         return $this->client
@@ -1361,7 +1361,7 @@ class InboxControllerApi
      *
      * @param  string $apiKey Your API Key. Sign up and find it in your dashboard. (required)
      * @param  string $uuid The inbox&#39;s id. (required)
-     * @param  \MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
+     * @param  \MailSlurp\Swagger\Model\SendEmailDto $sendEmailDto The email to send. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

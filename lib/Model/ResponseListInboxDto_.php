@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace MailSlurp\Swagger\MailSlurp\Swagger\Model;
+namespace MailSlurp\Swagger\Model;
 
 use \ArrayAccess;
 use \MailSlurp\Swagger\ObjectSerializer;
@@ -58,7 +58,7 @@ class ResponseListInboxDto_ implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'message' => 'string',
-        'payload' => '\MailSlurp\Swagger\MailSlurp\Swagger\Model\InboxDto[]'
+        'payload' => '\MailSlurp\Swagger\Model\InboxDto[]'
     ];
 
     /**
@@ -238,7 +238,7 @@ class ResponseListInboxDto_ implements ModelInterface, ArrayAccess
     /**
      * Gets payload
      *
-     * @return \MailSlurp\Swagger\MailSlurp\Swagger\Model\InboxDto[]
+     * @return \MailSlurp\Swagger\Model\InboxDto[]
      */
     public function getPayload()
     {
@@ -248,7 +248,7 @@ class ResponseListInboxDto_ implements ModelInterface, ArrayAccess
     /**
      * Sets payload
      *
-     * @param \MailSlurp\Swagger\MailSlurp\Swagger\Model\InboxDto[] $payload payload
+     * @param \MailSlurp\Swagger\Model\InboxDto[] $payload payload
      *
      * @return $this
      */

@@ -1,9 +1,9 @@
 {
     "variableNamingConvention": "camelCase",
-    "apiPackage": "MailSlurp\\Swagger\\Api",
-    "modelPackage": "MailSlurp\\Swagger\\Model",
+    "apiPackage": "Api",
+    "modelPackage": "Model",
     "invokerPackage": "MailSlurp\\Swagger",
-    "packagePath": "MailSlurp",
+    "packagePath": "",
     "artifactVersion": "0.1.0",
     "gitUserId": "quartzy",
     "gitRepoId": "mailslurp-swagger"

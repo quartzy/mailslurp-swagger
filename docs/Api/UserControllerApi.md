@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getUserUsingGET**
-> \MailSlurp\Swagger\MailSlurp\Swagger\Model\UserDto getUserUsingGET($jwtToken)
+> \MailSlurp\Swagger\Model\UserDto getUserUsingGET($jwtToken)
 
 Fetch a user
 
@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\MailSlurp\Swagger\MailSlurp\Swagger\Model\UserDto**](../Model/UserDto.md)
+[**\MailSlurp\Swagger\Model\UserDto**](../Model/UserDto.md)
 
 ### Authorization
 

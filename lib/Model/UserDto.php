@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace MailSlurp\Swagger\MailSlurp\Swagger\Model;
+namespace MailSlurp\Swagger\Model;
 
 use \ArrayAccess;
 use \MailSlurp\Swagger\ObjectSerializer;

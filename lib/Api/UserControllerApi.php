@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace MailSlurp\Swagger\MailSlurp\Swagger\Api;
+namespace MailSlurp\Swagger\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -96,7 +96,7 @@ class UserControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \MailSlurp\Swagger\MailSlurp\Swagger\Model\UserDto
+     * @return \MailSlurp\Swagger\Model\UserDto
      */
     public function getUserUsingGET($jwtToken)
     {
@@ -113,11 +113,11 @@ class UserControllerApi
      *
      * @throws \MailSlurp\Swagger\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \MailSlurp\Swagger\MailSlurp\Swagger\Model\UserDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \MailSlurp\Swagger\Model\UserDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUserUsingGETWithHttpInfo($jwtToken)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\UserDto';
+        $returnType = '\MailSlurp\Swagger\Model\UserDto';
         $request = $this->getUserUsingGETRequest($jwtToken);
 
         try {
@@ -169,7 +169,7 @@ class UserControllerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\MailSlurp\Swagger\MailSlurp\Swagger\Model\UserDto',
+                        '\MailSlurp\Swagger\Model\UserDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class UserControllerApi
      */
     public function getUserUsingGETAsyncWithHttpInfo($jwtToken)
     {
-        $returnType = '\MailSlurp\Swagger\MailSlurp\Swagger\Model\UserDto';
+        $returnType = '\MailSlurp\Swagger\Model\UserDto';
         $request = $this->getUserUsingGETRequest($jwtToken);
 
         return $this->client

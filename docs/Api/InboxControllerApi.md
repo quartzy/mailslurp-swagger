@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **createRandomInboxUsingPOST**
-> \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseInboxDto_ createRandomInboxUsingPOST($apiKey)
+> \MailSlurp\Swagger\Model\ResponseInboxDto_ createRandomInboxUsingPOST($apiKey)
 
 Create an inbox
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseInboxDto_**](../Model/ResponseInboxDto_.md)
+[**\MailSlurp\Swagger\Model\ResponseInboxDto_**](../Model/ResponseInboxDto_.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **deleteInboxUsingDELETE**
-> \MailSlurp\Swagger\MailSlurp\Swagger\Model\Response deleteInboxUsingDELETE($apiKey, $uuid)
+> \MailSlurp\Swagger\Model\Response deleteInboxUsingDELETE($apiKey, $uuid)
 
 Delete an inbox
 
@@ -98,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response**](../Model/Response.md)
+[**\MailSlurp\Swagger\Model\Response**](../Model/Response.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEmailsForInboxUsingGET**
-> \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListEmailDto_ getEmailsForInboxUsingGET($apiKey, $uuid, $minCount, $maxWait, $since)
+> \MailSlurp\Swagger\Model\ResponseListEmailDto_ getEmailsForInboxUsingGET($apiKey, $uuid, $minCount, $maxWait, $since)
 
 Fetch emails for a given inbox
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListEmailDto_**](../Model/ResponseListEmailDto_.md)
+[**\MailSlurp\Swagger\Model\ResponseListEmailDto_**](../Model/ResponseListEmailDto_.md)
 
 ### Authorization
 
@@ -169,7 +169,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getListOfInboxesUsingGET**
-> \MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListInboxDto_ getListOfInboxesUsingGET($apiKey)
+> \MailSlurp\Swagger\Model\ResponseListInboxDto_ getListOfInboxesUsingGET($apiKey)
 
 List your inboxes
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\MailSlurp\Swagger\MailSlurp\Swagger\Model\ResponseListInboxDto_**](../Model/ResponseListInboxDto_.md)
+[**\MailSlurp\Swagger\Model\ResponseListInboxDto_**](../Model/ResponseListInboxDto_.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendEmailFromUserUsingPOST**
-> \MailSlurp\Swagger\MailSlurp\Swagger\Model\Response sendEmailFromUserUsingPOST($apiKey, $uuid, $sendEmailDto)
+> \MailSlurp\Swagger\Model\Response sendEmailFromUserUsingPOST($apiKey, $uuid, $sendEmailDto)
 
 Send an email
 
@@ -236,7 +236,7 @@ $apiInstance = new MailSlurp\Swagger\Api\InboxControllerApi(
 );
 $apiKey = "test"; // string | Your API Key. Sign up and find it in your dashboard.
 $uuid = "uuid_example"; // string | The inbox's id.
-$sendEmailDto = new \MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto(); // \MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto | The email to send.
+$sendEmailDto = new \MailSlurp\Swagger\Model\SendEmailDto(); // \MailSlurp\Swagger\Model\SendEmailDto | The email to send.
 
 try {
     $result = $apiInstance->sendEmailFromUserUsingPOST($apiKey, $uuid, $sendEmailDto);
@@ -253,11 +253,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **apiKey** | **string**| Your API Key. Sign up and find it in your dashboard. | [default to test]
  **uuid** | **string**| The inbox&#39;s id. |
- **sendEmailDto** | [**\MailSlurp\Swagger\MailSlurp\Swagger\Model\SendEmailDto**](../Model/SendEmailDto.md)| The email to send. |
+ **sendEmailDto** | [**\MailSlurp\Swagger\Model\SendEmailDto**](../Model/SendEmailDto.md)| The email to send. |
 
 ### Return type
 
-[**\MailSlurp\Swagger\MailSlurp\Swagger\Model\Response**](../Model/Response.md)
+[**\MailSlurp\Swagger\Model\Response**](../Model/Response.md)
 
 ### Authorization
 
